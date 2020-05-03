@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
     <title>あおゆの部屋</title>
 
@@ -18,22 +22,19 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-lg fixed-top">
             <a class="navbar-brand" href="#">あおゆの部屋</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="md" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PROFILE</a>
+                        <a class="nav-link" href="#HOBBY">HOBBY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HOBBY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="#CONTACT">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -56,15 +57,57 @@
             <div class="html col-3 text-white h4">PHP</div>
         </div>
     </div>
-    <p class="display-4">Welcome To My Page...</p>
-    <p>初めまして。”あおゆ"というものです。</p>
-    <p>このサイトは私の簡単な自己紹介ページになっています</p>
-    <p>職歴、趣味などを通じて私のことを知っていただけると幸いです</p>
-     
-    <p class="small warning">※このサイトは主にhtml,css,bootstrapを組み合わせて作っています</p>
+
+
+    <div id="top">
+        <p id="welcome" class="display-4 pt-4">Welcome To My Page...</p>
+        <p>初めまして。”あおゆ"というものです。</p>
+        <p>このサイトは私の簡単な自己紹介ページになっています</p>
+        <p>趣味を通じて私のことを知っていただけると幸いです</p>
+        <p class="small warning mb-0 pb-4">※このサイトは主にhtml,css,bootstrapを組み合わせて作っています</p>
+    </div>
+
 
     <div id="profile-point" class="big-bg2">
-        
+        <div id="HOBBY" class="container">
+            <p class="display-1 text-white">MY HOBBY</p>
+            <div class="row">
+                <i class="fas fa-gamepad display-1 text-white col-md-3"></i>
+                <div class="col-md-3 text-white h2 pt-4">Game</div>
+                <div class="col-md-6 text-white">休みの日は基本ゲームをしてます。<br>
+                    最近はplaystation4、Switchを主にプレイしています。<br>
+                    直近では、スプラトゥーン,WinningElevenにハマっていました<br>
+                    時間を忘れてプレイしてしまうので最近は自粛中です笑
+                </div>
+            </div>
+            <div class="row">
+                <i class="fas fa-tshirt display-1 text-white col-md-3 pt-5 mt-3"></i>
+                <div class="col-md-3 text-white h2 pt-5 mt-4">Fashion</div>
+                <div class="col-md-6 text-white pt-5">服が好きです。<br>
+                    ファッション雑誌、Wear等のアプリを見たりするのが好きです。<br>
+                    自分が着たいものを着て自己満足してます笑<br>
+                    最近はプチプラのアイテムから良いものを厳選して楽しんでいます。
+
+
+                </div>
+            </div>
+            <div class="row">
+                <i class="fas fa-headphones display-1 text-white col-md-3 pt-5 pb-5"></i>
+                <div class="col-md-3 text-white h2 pt-5">Music</div>
+                <div class="col-md-6 text-white pt-5">聞き専ですが音楽が好きです。<br>
+                    色んなアーティスト聞きますが、BUMP OF CHICKEN、宇多田ヒカル、最近では米津玄師、King Gnuにハマっています。<br>
+                    カラオケで歌うのも好きです（下手です
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="last_contact" class="big-bg3">
+        <div id="CONTACT" class="container">
+            <p class="display-4">CONTACT</p>
+            <p class="text-center h3">TEL 000-1111-2222</p>
+            <p class="text-center h3">E-mail: aoyu@googole.com</p>
+        </div>
     </div>
 
 
@@ -74,17 +117,7 @@
 
 
 
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src=“script.js”></script>
 </body>
 
 </html>

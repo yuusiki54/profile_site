@@ -16,4 +16,21 @@ opacity: 0.8;
     background-repeat: no-repeat;
 }
 
+#profile-point {
+    background-image: url(img/趣味の背景.jpg);
+}
+
+.class{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#top {
+    background-color:#EEEEEE !important;
+}
+
+#last_contact {
+    background-color:#EEEEEE;
+}
 
